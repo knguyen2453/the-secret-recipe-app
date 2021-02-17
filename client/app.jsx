@@ -3,7 +3,7 @@ import { Route, Link } from 'react-router-dom';
 import Home from './pages/home';
 import Create from './pages/create';
 import Recipes from './pages/recipes';
-import Landing from './pages/landing';
+import Login from './pages/login';
 
 export default class App extends React.Component {
   render() {
@@ -13,7 +13,7 @@ export default class App extends React.Component {
           <Link className="px-4" to="/">Home</Link>
           <Link className="px-4" to="/create">Create</Link>
           <Link className="px-4" to="/recipes">Search</Link>
-          <Link className="px-4" to="/landing">Log Out</Link>
+          <Link className="px-4" to="/login">Log Out</Link>
         </div>
 
         <Route exact path="/">
@@ -25,8 +25,8 @@ export default class App extends React.Component {
         <Route path="/recipes">
           <Recipes />
         </Route>
-        <Route path="/landing">
-          <Landing />
+        <Route path="/login">
+          <Login />
         </Route>
       </div>
     );
